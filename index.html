@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Occlusion Dental Care</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       background: #fdfdfd;
@@ -13,6 +12,7 @@
       color: #222;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
 
     header {
@@ -43,6 +43,7 @@
       gap: 25px;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
 
     nav ul li a {
@@ -87,7 +88,8 @@
     }
 
     .image-gallery img {
-      width: 200px;
+      width: 100%;
+      max-width: 200px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
@@ -141,12 +143,54 @@
     .whatsapp-button:hover {
       transform: scale(1.1);
     }
+
+    /* Mobile Responsive Styling */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .image-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-gallery img {
+        width: 90%;
+        max-width: 300px;
+      }
+
+      .instagram-link {
+        flex-direction: column;
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      section {
+        padding: 20px 10px;
+      }
+
+      nav ul li a {
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="Cliniclogo.png" alt="Occlusion Dental Care Logo" class="logo">
   </header>
+
   <nav>
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
@@ -157,6 +201,7 @@
       <li><a href="about.html">About Us</a></li>
     </ul>
   </nav>
+
   <section>
     <h2>Welcome to Occlusion Dental Care</h2>
     <p>Providing top-notch dental solutions with precision and compassion.</p>
@@ -179,9 +224,6 @@
       <img src="IMG-20250331-WA0028.jpg" alt="Dental Team">
       <img src="sanjanaSign.jpg" alt="Dentist">
       <img src="add1.jpg" alt="Dentist">
-      <img src="add2.jpg" alt="Dentist">
-      <img src="add3.jpg" alt="Dentist">
-
     </div>
 
     <h1>Your best smile starts with quality expertise where dentistry meets artistry.</h1>
