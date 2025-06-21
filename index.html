@@ -1,66 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Occlusion Dental Care</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Occlusion Dental Care</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fdfdfd;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      max-width: 200px;
+      height: auto;
+      display: inline-block;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #1A365D;
+      padding: 12px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #274B77;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 960px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: #2A4365;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #1A202C;
+      margin-top: 40px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .instagram-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 25px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background-color: #F0F4F8;
+      color: #1A365D;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .instagram-link:hover {
+      background-color: #1A365D;
+      color: #ffffff;
+    }
+
+    .instagram-link i {
+      font-size: 20px;
+    }
+
+    footer {
+      background: #1A365D;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.PNG" alt="Occlusion Dental Care Logo" class="logo">
-        
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="treatment.html" class="active">Treatment Gallery</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Welcome to Occlusion Dental Care</h2>
-        <p>Providing top-notch dental solutions with precision and compassion.</p>
-        <p class="instagram-link">
-            <i class="fab fa-instagram"></i>
-            <a href="https://www.instagram.com/occlusiondentalcareofficial/" target="_blank">
-                Follow us on Instagram
-            </a>
-        </p>
-        
-        <div class="image-gallery">
-            <img src="IMG-20250331-WA0001.jpg" alt="Dental Clinic">
-            <img src="IMG-20250331-WA0002.jpg" alt="Dental Equipment">
-            <img src="IMG-20250331-WA0003.jpg" alt="Happy Patients">
-            <img src="IMG-20250331-WA0006.jpg" alt="Dental Team">
-            <img src="IMG-20250331-WA0007.jpg" alt="Dental Team">
-            <img src="IMG-20250331-WA0010.jpg" alt="Dental Team">
-            <img src="IMG-20250331-WA0012.jpg" alt="Dental Team">
-            <img src="IMG-20250331-WA0013.jpg" alt="Dental Team">
-            <img src="IMG-20250331-WA0019.jpg" alt="Dental Team">
-            <img src="IMG-20250331-WA0021.jpg" alt="Dental Team">
-            <img src="IMG-20250331-WA0026.jpg" alt="Dental Team">
-            <img src="IMG-20250331-WA0028.jpg" alt="Dental Team">
-        </div>
-       
-        <h1>Your best smile starts with quality expertise where dentistry meets artistry.</h1> 
-            <p>We create the most beautiful smiles and we keep those smiles beautiful. The clinic that guarantees high-quality dental work in a comfortable manner</p>
-    </section>
-    <footer>
-        <!-- WhatsApp Chat Button -->
-    <a href="https://wa.me/9199902 86107" class="whatsapp-button" target="_blank">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat with us on WhatsApp" />
-  </a>
-  
-        <p>&copy; 2025 Occlusion Dental Care. All rights reserved.</p>
-        
-    </footer>
+  <header>
+    <img src="Cliniclogo.png" alt="Occlusion Dental Care Logo" class="logo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="treatment.html">Treatment Gallery</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Welcome to Occlusion Dental Care</h2>
+    <p>Providing top-notch dental solutions with precision and compassion.</p>
+    <a class="instagram-link" href="https://www.instagram.com/occlusiondentalcareofficial/" target="_blank">
+      <i class="fab fa-instagram"></i>Follow us on Instagram
+    </a>
+
+    <div class="image-gallery">
+      <img src="IMG-20250331-WA0001.jpg" alt="Dental Clinic">
+      <img src="IMG-20250331-WA0002.jpg" alt="Dental Equipment">
+      <img src="IMG-20250331-WA0003.jpg" alt="Happy Patients">
+      <img src="IMG-20250331-WA0006.jpg" alt="Dental Team">
+      <img src="IMG-20250331-WA0007.jpg" alt="Dental Team">
+      <img src="IMG-20250331-WA0010.jpg" alt="Dental Team">
+      <img src="IMG-20250331-WA0012.jpg" alt="Dental Team">
+      <img src="IMG-20250331-WA0013.jpg" alt="Dental Team">
+      <img src="IMG-20250331-WA0019.jpg" alt="Dental Team">
+      <img src="IMG-20250331-WA0021.jpg" alt="Dental Team">
+      <img src="IMG-20250331-WA0026.jpg" alt="Dental Team">
+      <img src="IMG-20250331-WA0028.jpg" alt="Dental Team">
+      <img src="sanjanaSign.jpg" alt="Dentist">
+      <img src="add1.jpg" alt="Dentist">
+      <img src="add2.jpg" alt="Dentist">
+      <img src="add3.jpg" alt="Dentist">
+
+    </div>
+
+    <h1>Your best smile starts with quality expertise where dentistry meets artistry.</h1>
+    <p>We create the most beautiful smiles and we keep those smiles beautiful. The clinic that guarantees high-quality dental work in a comfortable manner.</p>
+  </section>
+
+  <footer>
+    <a href="https://wa.me/919990286107" class="whatsapp-button" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat with us on WhatsApp" />
+    </a>
+    <p>&copy; 2025 Occlusion Dental Care. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
- 

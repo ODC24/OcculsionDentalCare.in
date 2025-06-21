@@ -1,157 +1,188 @@
+/* Global body styles */
 body {
-    background-image: url('images/background.jpg'); /* Path to your image */
-    background-size: cover; /* Covers the entire screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
+  background: #fdfdfd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-header {
-    width: 100%;
-    background:#9f83a2;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    box-sizing: border-box;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* New Navigation Bar */
+
+/* Header */
+header {
+  background: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
+/* Navigation */
 nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #4A1D57; /* Dark purple */
-    padding: 15px 0;
-    z-index: 1000;
-    text-align: center;
-    box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  background-color: #1A365D;
+  padding: 12px 0;
+  z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav ul li {
-    display: inline;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #7B4A91; /* Lighter purple */
-    border-radius: 5px;
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #274B77;
 }
-  
-  /* Treatment Gallery Styles */
-  .treatment-gallery {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .treatment-gallery h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: black;
-  }
-  
-  .treatment-gallery p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #666;
-  }
-  
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 5px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .gallery-item {
-    background: #ffffff;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .gallery-item img {
-    width: 80%;
-    border-radius: 8px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item img:hover {
-    transform: scale(1.05);
-  }
 
-  .before-after-wrapper {
-    display: flex;
-    justify-content: center; /* Center them */
-    gap: 10px; /* Controls spacing between them */
-    flex-wrap: wrap;
-  }
-  
- * .before, .after {
-    flex: 0 0 auto; /* Don’t stretch */
-    text-align: center;
-  }
-  
-  * .before img,
-  .after img {
-    width: 300px; /* Or any fixed size that works for your design */
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .before-after-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px; /* space between before and after blocks */
-    flex-wrap: wrap;
-    margin: 40px auto;
-    max-width: 1000px;
-  }
-  
-  .before, .after {
-    flex: 1 1 45%;
-    text-align: center;
-  }
-  
-  .before img,
-  .after img,
-  .before video,
-  .after video {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    margin-top: 10px;
-  }
-  
+/* Services Section */
+.services {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #2A4365;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.service-box {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-text {
+  flex: 1 1 60%;
+}
+
+.service-text h3 {
+  color: #274B77;
+  margin-bottom: 10px;
+}
+
+.service-text p {
+  margin: 4px 0;
+  color: #444;
+}
+
+/* Consistent, larger image size for service images, gallery images, before-after images/videos */
+.service-img,
+.gallery-item img,
+.before img,
+.after img,
+.before video,
+.after video {
+  width: 360px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-img:hover,
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #1A365D;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ==== TREATMENT GALLERY SECTION ==== */
+
+.treatment-gallery {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.treatment-gallery h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.treatment-gallery p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Before and After Section */
+
+.before-after-wrapper {
+  max-width: 960px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center; /* Center them */
+  gap: 20px; /* Controls spacing between them */
+  flex-wrap: wrap;
+}
+
+.before, .after {
+  flex: 1 1 auto;
+  text-align: center;
+}
